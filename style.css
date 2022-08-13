@@ -73,7 +73,7 @@ body {
 }
 
 .navbar {
-    height: 50px;
+    height: 60px;
     background-color: #eee8e8;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0,0,0, 0.18);    
     overflow: hidden;
@@ -86,7 +86,7 @@ body {
     color: #161515;
     text-align: center;
     padding: 8px;
-    line-height: 35px;
+    line-height: 45px;
     text-decoration: none;
     margin-left: 5px;
   }
@@ -117,14 +117,13 @@ body {
 
 .title {
     padding: 8px 38px;
-    line-height: 15px;   
+    line-height: 45px;   
     display: none; 
-    line-height: 35px;
 } 
 
 .fa.fa-bars {
     font-size: 26px;
-    padding: 6px 6px 6px 6px;
+    padding: 8px;
     color:#0a04aa;
 }
 /* The side navigation menu */
