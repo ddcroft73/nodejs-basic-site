@@ -75,7 +75,7 @@ body {
 .navbar {
     height: 50px;
     background-color: rgb(238, 232, 232);
-    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.4), 0 0px 0px 0 rgba(27, 28, 27, 0.19);    
+    box-shadow: 0px 0px 12px 3px rgba(0, 0, 0, 0.4), 0 0px 0px 0 rgba(27, 28, 27, 0.19);    
     overflow: hidden;
 }
 
@@ -118,6 +118,8 @@ body {
     font-size: 26px;
     padding-top: 6px;
     padding-right: 6px;
+    padding-left: 6px;
+    color:rgb(27, 22, 150);
 }
 /* The side navigation menu */
 .sidenav {
@@ -127,10 +129,12 @@ body {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: rgb(66, 62, 62); /* Black*/
+    background-color: rgb(4, 4, 4); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 40px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    opacity: 0.9;
+    border-top-right-radius: 8px;
   }
   
   /* The navigation menu links */
