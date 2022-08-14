@@ -85,10 +85,15 @@ body {
     display: block;
     color: #161515;
     text-align: center;
-    padding: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     line-height: 45px;
     text-decoration: none;
     margin-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 4px;
   }
   
   /* Change the color of links on hover */
@@ -105,80 +110,122 @@ body {
   
   /* Add an active class to highlight the current page */
 .navbar a.active {
-    background-color: #0a04aa;
+    background-color: #04aa0f;
     color: white;
     border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 4px;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
 .navbar .icon {
     display: none;
+    padding: 4px 10px 4px 10px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    margin-right: 8px;
+    line-height: 0px;
   }
 
+  
 .title {
     padding: 8px 38px;
     line-height: 45px;   
     display: none; 
+    
 } 
 
 .fa.fa-bars {
-    font-size: 26px;
-    padding: 8px;
-    color:#0a04aa;
+    font-size: 30px;
+    color:#04aa0f;
 }
 /* The side navigation menu */
 .sidenav {
-    height: 70%; /* 100% Full-height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: rgb(238, 232, 232); /* Black*/
+    background-color: rgb(116, 122, 152); /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 40px; /* Place content 60px from the top */
+    padding-top: 0px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    opacity: 0.9;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 0px;
+    border: 0px solid rgb(6, 6, 6);
   }
   
-  /* The navigation menu links */
-.sidenav a {
-    padding: 10px 6px 6px 52px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #161515;
-    display: block;
-    transition: 0.3s;
 
-  }
-  
-.sidenav a:first-child {
-    border: none;
-  }
+.sidenav .logo-sidenav-container {
+    display: flex;
+    border: 0px solid rgb(6, 6, 6);  
+}
 
-  /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #0a04aa;
-  }
-  
-  /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    padding-left: 10px;
-    position: absolute;
+.sidenav .logo-sidenav-container .logo-container{
+    display: flex;
+    border: 1px solid #632e81;
+    align-items: center;
+    width: 210px;
+    margin-left: 10px;
+    padding-left: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 8px;
+}
+/*
+.sidenav .logo-sidenav-container .close {
+}
+/*
+ /* Position and style the close button (top right corner) */
+.sidenav .logo-sidenav-container .close .closebtn {
+    padding-left: 5px;
+    padding-top: 5px;
+    /* position: absolute;
     top: 0;
     right: 0px; /* cange to left for opposite*/
     font-size: 28px;
     font-weight: 600;
-    margin-right: 8px;
+    margin-right: 5px;
+    border-radius: 50px;
+  }
+
+.sidenav .nav-container {
+    width: 100px;
+    margin-left: 15px;
+    margin-top: 1px;
+}
+  /* The navigation menu links */
+.sidenav a {
+    padding: 8px 6px 6px 0px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #632e81;
+    display: block;
+    transition: 0.3s;
+    border: 0px solid rgb(6, 6, 6);
+
+  }
+
+  /* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #999907;
   }
   
+ 
+  
 .hr {
-    width: 70%;
+    width: 215px;
     border-bottom: 1px solid rgb(201, 196, 196);
-    margin-left: 25px;
+    margin-left: 15px;
+    margin-top: 5px;
 }
+
 
 
 /* Media query for mobile */
