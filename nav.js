@@ -20,4 +20,6 @@ if (firefoxAgent) {
     head.style.fontSize = '20px';
     const text = document.querySelector('.content-text');
     text.style.fontSize = '18px';
+    const mainContent = document.querySelector('.main-content');
+    mainContent.style.height = '400px';
 }
