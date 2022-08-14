@@ -21,15 +21,22 @@
     <div class="title">About</div>
 </div>
 
+
 <div class="sidenav" id="Sidenav" >
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html" class="home">Home</a>
+    <div class="logo-sidenav-container">  <!-- flex container-->
+        <div class="logo-container">       <!-- flex item-->
+              <img src="logo.png" width="150" height="50">
+        </div>
+        <div class="close">               <!-- flex item-->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    
+        </div>
+    </div>
     <div class="hr"></div>
-    <a href="about.html" class="about">About</a>
-    <div class="hr"></div>
-    <a href="contact.html" class="contact">Contact</a>
-    <div class="hr"></div>
-</div>
+    <div class="nav-container">
+        <a href="index.html" class="home"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>
+        <a href="about.html" class="about"><i class="fa fa-fw fa-user"></i>&nbsp;About</a>
+        <a href="contact.html" class="contact"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact</a>
+    </div>
 </div>
 <script src="nav.js"></script>
 </body>
