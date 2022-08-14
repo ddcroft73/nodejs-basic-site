@@ -336,8 +336,16 @@ span.name {
       display: block;
     }
     .main-content {
-        height: 320px;
+        height: 580px;
     }
+    .content-head {
+      font-size: 24px;
+  }
+  
+  .content-text {
+    font-size: 22px;
+  
+  }
   }
 
   @media screen and (max-width: 415px) {
@@ -358,6 +366,7 @@ span.name {
   }
 
   @media screen and (min-width: 800px) {    
+    /* above 800, make the containter flex and center*/
     .main-flex-container {
       display: flex;    
       justify-content: center;
