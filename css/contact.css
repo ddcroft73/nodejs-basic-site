@@ -67,31 +67,16 @@ input, select {
     box-sizing: border-box;
   }
 
-input[type=text], select, textarea {
+input[type=text], textarea {
   width: 100%;
   padding: 4px;
   border: 1px solid #999907;
   border-radius: 4px;
   resize: vertical;
   font-size: 12px;
+  margin-bottom: 8px;
 }
 
-.source-code {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-left: 3px solid #f36d33;
-    color: #666;
-    page-break-inside: avoid;
-    font-family: monospace;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1em 1.5em;
-    display: block;
-    word-wrap: break-word;
-}
 #email {
     margin-bottom: 25px;
 }
@@ -106,7 +91,6 @@ input[type=submit] {
   background-color: #04AA6D;
   color: white;
   padding: 5px 20px;
-  margin-top: 5px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -187,6 +171,7 @@ make the two columns stack on top of each other instead of next to each other */
       flex: 1 95%;
       border: 1px solid #999907;
       margin: 15px;      
+      width: 800px;
       overflow: auto;
   }
 
@@ -195,7 +180,16 @@ make the two columns stack on top of each other instead of next to each other */
         height: 500px; /* need to test the browser and handle the differences between FF and chrome */
     }
 
-    label, input[type=submit], input[type=text],textarea {
+    label, input[type=submit], input[type=text] {
       font-size: 18px;
     }
   }
+
+  @media screen and (min-width: 800px) {    
+    /* above 800, make the containter flex and center*/
+    .contact-main-flex-container {
+      display: flex;    
+      justify-content: center;
+      align-items: center;
+    }
+  }  

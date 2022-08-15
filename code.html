@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/code.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="description" content="" />
 </head>
@@ -43,6 +44,47 @@
         <a href="code.html" class="code"><i class="fa fa-fw fa-code"></i>&nbsp;Code</a>
         <a href="about.html" class="about"><i class="fa fa-fw fa-user"></i>&nbsp;About</a>
         <a href="contact.html" class="contact"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact</a>
+    </div>
+</div>
+
+
+<div class="code-main-flex-container"  >
+    <div clas="code-main-content-container">
+        <div class="code-main-content">            
+            <div class="code-content">
+                    <div class="line-count">
+                        <ol>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                        </ol>
+                        
+                    </div>
+                    <div class="source-code">
+                        const http = require('http');<br>
+const fs = require('fs');<br>
+<br>
+const htmlfiles = fs.readdirSync("./views", { withFileTypes: true })<br>
+&nbsp;&nbsp;&nbsp;&nbsp; .map(file => file.name);<br>
+<br>
+const cssfiles = fs.readdirSync("./css/", { withFileTypes: true })<br>
+&nbsp;&nbsp;&nbsp;&nbsp; .map(file => file.name);<br>
+<br>
+More code to come...
+                    </div>             
+            </div>
+        </div>
     </div>
 </div>
 
