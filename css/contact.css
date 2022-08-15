@@ -194,4 +194,8 @@ make the two columns stack on top of each other instead of next to each other */
     .contact-main-content {
         height: 500px; /* need to test the browser and handle the differences between FF and chrome */
     }
+
+    label, input[type=submit], input[type=text],textarea {
+      font-size: 18px;
+    }
   }
