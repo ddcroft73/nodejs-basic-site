@@ -11,16 +11,16 @@ const closeNav = () => {
   } 
 
 
-let userAgentString = navigator.userAgent;
+/*let userAgentString = navigator.userAgent;
   // Detect Firefox
 let firefoxAgent = userAgentString.indexOf("Firefox") > -1;
 let chromeAgent = userAgentString.indexOf("Chrome") > -1;
           
-if (firefoxAgent) {
+if (!firefoxAgent) {
     const head = document.querySelector('.content-head');
     head.style.fontSize = '20px';
     const text = document.querySelector('.content-text');
     text.style.fontSize = '18px';
     const mainContent = document.querySelector('.main-content');
     mainContent.style.height = '600px';
-}
+}*/

@@ -221,7 +221,7 @@ span.name {
 .sidenav .logo-sidenav-container .close .closebtn {
     padding-left: 5px;
     padding-top: 5px;
-    font-size: 38px;
+    font-size: 55px;
     margin-right: 5px;
     border-radius: 50px;
   }
@@ -275,10 +275,11 @@ span.name {
   max-width: 800px;
 
 
-  height: 400px;
+  height: 280px; /* needs to be 500+ for a happy medium effect*/
   background-color:  #eee8e8;
   border-radius: 8px;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0,0,0, 0.18); 
+  overflow: auto;
   
 }
 .content {
@@ -335,7 +336,7 @@ span.name {
       display: block;
     }
     .main-content {
-        height: 600px;
+        height: 600px; /* need to test the browser and handle the differences between FF and chrome */
     }
     .content-head {
       font-size: 26px;
