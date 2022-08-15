@@ -285,18 +285,20 @@ span.name {
 .content {
     flex: 1 95%;
     border: 0px solid #999907;
-    margin: 10px;
+    margin: 15px;
+    overflow: auto;
    /* font-size: 12px; */
     
 }
 .content-head {
     font-size: 16px;
 }
-
 .content-text {
   font-size: 14px;
-
 }
+
+
+
 .footer {
   position: fixed;
   display: flex;
@@ -310,7 +312,6 @@ span.name {
   height: 35px;
   background-color: #eee8e8; 
   border-top: 1px solid #999907; 
-
 }
 .email-link svg {
   filter: drop-shadow(1px 0 10px hsla(170, 0%, 0%, 0.5));
@@ -327,28 +328,6 @@ span.name {
 
 /* Media query for mobile */
 @media screen and (max-width: 415px) {    
-    .navbar { height: 60px;}
-    .navbar a {display: none;}
-    .header-container {display: none;}
-    .navbar .title {display: block;}
-    .navbar a.icon {
-      float: right;
-      display: block;
-    }
-    .main-content {
-        height: 600px; /* need to test the browser and handle the differences between FF and chrome */
-    }
-    .content-head {
-      font-size: 26px;
-  }
-  
-  .content-text {
-    font-size: 22px;
-  
-  }
-  }
-
-  @media screen and (max-width: 415px) {
     .navbar.responsive {
       position: relative;  /* make sticky*/
     }
@@ -362,7 +341,24 @@ span.name {
       display: block;
       text-align: left;
     }
+    .navbar { height: 60px;}
+    .navbar a {display: none;}
+    .header-container {display: none;}
+    .navbar .title {display: block;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
 
+    .main-content {
+        height: 600px; /* need to test the browser and handle the differences between FF and chrome */
+    }
+    .content-head {
+        font-size: 26px;
+    }  
+    .content-text {
+      font-size: 22px;  
+    }
   }
 
   @media screen and (min-width: 800px) {    

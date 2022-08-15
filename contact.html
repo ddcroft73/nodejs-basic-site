@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="contact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="description" content="" />
 </head>
@@ -46,7 +47,52 @@
     </div>
 </div>
 
+<div class="contact-main-flex-container"  >
+    <div clas="contact-main-content-container">
+        <div class="contact-main-content">
+            <div class="contact-content">
 
+                <div class="form-container">
+
+                    <form>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="fname">Name:</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="fname" name="firstname" placeholder="Your name">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="lname">Email:</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="email" name="email" placeholder="Email address">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="subject">Message:</label>
+                        </div>
+                        <div class="col-75">
+                          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <input type="submit" value="Submit">
+                      </div>
+                    </form>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="footer">
     DCroft 2022 &copy
