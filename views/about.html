@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Contact </title>
+  <title>About </title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/contact.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/about.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="description" content="" />
 </head>
@@ -16,23 +16,23 @@
         <span class="heading">Simple NodeJS Server</span></h1>
     </div>
 </div>
-
 <div class="navbar" id="Topnav">
     <a href="index.html" class="home"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>
     <a href="code.html" class="code"><i class="fa fa-fw fa-code"></i>&nbsp;Code</a>
-    <a href="about.html" class="about"><i class="fa fa-fw fa-user"></i>&nbsp;About</a>
-    <a href="contact.html" class="active contact"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact</a>
+    <a href="about.html"  class="active about"><i class="fa fa-fw fa-user"></i>&nbsp;About</a>
+    <a href="contact.html" class="contact"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="openNav()"><i class="fa fa-bars"></i></a>
-
+    
     <div class="title">
-        <div class="title-box"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact - <span class="name">NodeJS Server</span></div>
+        <div class="title-box"><i class="fa fa-fw fa-user"></i>&nbsp;About - <span  class="name">NodeJS Server</span></div>
     </div>
 </div>
+
 
 <div class="sidenav" id="Sidenav" >
     <div class="logo-sidenav-container">  <!-- flex container-->
         <div class="logo-container">       <!-- flex item-->
-            <img src="image/logo.png" width="150" height="50">
+            <img src="/image/logo.png" width="150" height="50">
         </div>
         <div class="close">               <!-- flex item-->
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    
@@ -47,52 +47,17 @@
     </div>
 </div>
 
-<div class="contact-main-flex-container"  >
-    <div clas="contact-main-content-container">
-        <div class="contact-main-content">
-            <div class="contact-content">
-
-                <div class="form-container">
-
-                    <form>
-                      <div class="row">
-                        <div class="col-25">
-                          <label for="fname">Name:</label>
-                        </div>
-                        <div class="col-75">
-                          <input type="text" id="fname" name="firstname" placeholder="Your name">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="col-25">
-                          <label for="lname">Email:</label>
-                        </div>
-                        <div class="col-75">
-                          <input type="text" id="email" name="email" placeholder="Email address">
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <div class="col-25">
-                          <label for="subject">Message:</label>
-                        </div>
-                        <div class="col-75">
-                          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-                        </div>
-                      </div>
-
-                      <div class="row">
-                        <input type="submit" value="Submit">
-                      </div>
-                    </form>
-
-                </div>
-                
+<div class="about-main-flex-container"  >
+    <div clas="about-main-content-container">
+        <div class="about-main-content">   
+             <div class="about-content" >
+                 About me...
+            </div>
             </div>
         </div>
     </div>
 </div>
+
 
 <div class="footer">
     DCroft 2022 &copy
@@ -102,6 +67,17 @@
     </div>
     -->
 </div>
-<script src="nav.js"></script>
+<script>
+    const sideNav = document.querySelector('.sidenav');
+
+    const openNav = () => {
+        document.getElementById("Sidenav").style.width = "250px";
+        sideNav.style.boxShadow = '0px 0px 5px 3px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(27, 28, 27, 0.19)';
+    }    
+    const closeNav = () => {
+    document.getElementById("Sidenav").style.width = "0";
+    sideNav.style.boxShadow = '0px 0px 0px 0px rgba(0, 0, 0, 0.4), 0 0px 0px 0 rgba(27, 28, 27, 0.19)';
+    } 
+</script>
 </body>
 </html>

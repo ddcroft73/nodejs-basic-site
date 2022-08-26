@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Code </title>
+  <title>About </title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/code.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="description" content="" />
 </head>
@@ -16,23 +15,23 @@
         <span class="heading">Simple NodeJS Server</span></h1>
     </div>
 </div>
-
 <div class="navbar" id="Topnav">
     <a href="index.html" class="home"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>
-    <a href="code.html" class="active code"><i class="fa fa-fw fa-code"></i>&nbsp;Code</a>
-    <a href="about.html" class="about"><i class="fa fa-fw fa-user"></i>&nbsp;About</a>
+    <a href="code.html" class="code"><i class="fa fa-fw fa-code"></i>&nbsp;Code</a>
+    <a href="about.html"  class="active about"><i class="fa fa-fw fa-user"></i>&nbsp;About</a>
     <a href="contact.html" class="contact"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact</a>
     <a href="javascript:void(0);" class="icon" onclick="openNav()"><i class="fa fa-bars"></i></a>
-
+    
     <div class="title">
-        <div class="title-box"><i class="fa fa-fw fa-envelope"></i>&nbsp;Code - <span class="name">NodeJS Server</span></div>
+        <div class="title-box"><i class="fa fa-fw fa-user"></i>&nbsp;404 - <span  class="name">NodeJS Server</span></div>
     </div>
 </div>
+
 
 <div class="sidenav" id="Sidenav" >
     <div class="logo-sidenav-container">  <!-- flex container-->
         <div class="logo-container">       <!-- flex item-->
-            <img src="image/logo.png" width="150" height="50">
+            <img src="/image/logo.png" width="150" height="50">
         </div>
         <div class="close">               <!-- flex item-->
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    
@@ -47,42 +46,11 @@
     </div>
 </div>
 
-
-<div class="code-main-flex-container"  >
-    <div clas="code-main-content-container">
-        <div class="code-main-content">            
-            <div class="code-content">
-                    <div class="line-count">
-                        <ol>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li>6</li>
-                            <li>7</li>
-                            <li>8</li>
-                            <li>9</li>
-                            <li>10</li>
-                            <li>11</li>
-                            <li>12</li>
-                            <li>13</li>
-                            <li>14</li>
-                        </ol>
-                        
-                    </div>
-                    <div class="source-code">
-                        const http = require('http');<br>
-const fs = require('fs');<br>
-<br>
-const htmlfiles = fs.readdirSync("./views", { withFileTypes: true })<br>
-&nbsp;&nbsp;&nbsp;&nbsp; .map(file => file.name);<br>
-<br>
-const cssfiles = fs.readdirSync("./css/", { withFileTypes: true })<br>
-&nbsp;&nbsp;&nbsp;&nbsp; .map(file => file.name);<br>
-<br>
-More code to come...
-                    </div>             
+<div class="main-flex-container"  >
+    <div clas="main-content-container" style="max-width: 800px;">
+        <div class="main-content" style="text-align: center;">            
+            <div class="content" >
+                <h1>Error 404: <br><br>Page Not Found. </h1>
             </div>
         </div>
     </div>
@@ -97,6 +65,17 @@ More code to come...
     </div>
     -->
 </div>
-<script src="nav.js"></script>
+<script>
+    const sideNav = document.querySelector('.sidenav');
+
+    const openNav = () => {
+        document.getElementById("Sidenav").style.width = "250px";
+        sideNav.style.boxShadow = '0px 0px 5px 3px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(27, 28, 27, 0.19)';
+    }    
+    const closeNav = () => {
+    document.getElementById("Sidenav").style.width = "0";
+    sideNav.style.boxShadow = '0px 0px 0px 0px rgba(0, 0, 0, 0.4), 0 0px 0px 0 rgba(27, 28, 27, 0.19)';
+    } 
+</script>
 </body>
 </html>

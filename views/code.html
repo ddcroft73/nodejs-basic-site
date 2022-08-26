@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Code </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/code.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="" />
+</head>
+<body>
+
+<div class="header-container">
+    <div class="header">
+        <span class="heading">Simple NodeJS Server</span></h1>
+    </div>
+</div>
+
+<div class="navbar" id="Topnav">
+    <a href="index.html" class="home"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>
+    <a href="code.html" class="active code"><i class="fa fa-fw fa-code"></i>&nbsp;Code</a>
+    <a href="about.html" class="about"><i class="fa fa-fw fa-user"></i>&nbsp;About</a>
+    <a href="contact.html" class="contact"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="openNav()"><i class="fa fa-bars"></i></a>
+
+    <div class="title">
+        <div class="title-box"><i class="fa fa-fw fa-envelope"></i>&nbsp;Code - <span class="name">NodeJS Server</span></div>
+    </div>
+</div>
+
+<div class="sidenav" id="Sidenav" >
+    <div class="logo-sidenav-container">  <!-- flex container-->
+        <div class="logo-container">       <!-- flex item-->
+            <img src="/image/logo.png" width="150" height="50">
+        </div>
+        <div class="close">               <!-- flex item-->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class="nav-container">
+        <a href="index.html" class="home"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>
+        <a href="code.html" class="code"><i class="fa fa-fw fa-code"></i>&nbsp;Code</a>
+        <a href="about.html" class="about"><i class="fa fa-fw fa-user"></i>&nbsp;About</a>
+        <a href="contact.html" class="contact"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact</a>
+    </div>
+</div>
+
+
+<div class="code-main-flex-container"  >
+    <div clas="code-main-content-container">
+        <div class="code-main-content">            
+            <div class="code-content">
+                    <div class="line-count">
+                        <ol>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28</li>
+                            <li>29</li>
+                        </ol>
+                        
+                    </div>
+                    <div class="source-code">
+                        
+const cssFiles = fs.readdirSync('./css'); <br>
+const imageFiles = fs.readdirSync('./image'); <br>
+const htmlFiles = fs.readdirSync('./views'); <br>
+<br>
+let home = '/';<br>
+let error404;<br>
+fs.readFile('./views/404.html', (err, data) => {<br>
+    &nbsp;&nbsp;error404 = data;<br>
+});<br>
+<br>
+// serve the site<br>
+const server = http.createServer((req, res) => {<br>
+    &nbsp;&nbsp;let fileName = req.url;<br>
+    &nbsp;&nbsp;fileName = fileName === home ? 'index.html' : fileName.split('/').pop();<br>
+    <br>
+    &nbsp;&nbsp;let fileType = fileName.split('.')[1];<br>
+    &nbsp;&nbsp;let route = getRoute(fileName, fileType);<br>
+    &nbsp;&nbsp;displayContent(route, fileType, res);    <br>
+    <br>
+  }).listen(3000, () => {<br>
+    &nbsp;&nbsp;console.log('Server started on port 3000')<br>
+});<br>
+<br>
+<br>  
+&nbsp;&nbsp;<a href="fulllink">Full Source Code</a>
+                    </div>             
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    DCroft 2022 &copy
+    <!--
+    <div class="email-link">
+       <a href="mailto:gen.disarray@outlook.com"><svg viewBox="0 0 512 512" width="20" fill="#ffffff" title="envelope"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" /></svg></a>
+    </div>
+    -->
+</div>
+<script>
+    const sideNav = document.querySelector('.sidenav');
+
+    const openNav = () => {
+        document.getElementById("Sidenav").style.width = "250px";
+        sideNav.style.boxShadow = '0px 0px 5px 3px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(27, 28, 27, 0.19)';
+    }    
+    const closeNav = () => {
+    document.getElementById("Sidenav").style.width = "0";
+    sideNav.style.boxShadow = '0px 0px 0px 0px rgba(0, 0, 0, 0.4), 0 0px 0px 0 rgba(27, 28, 27, 0.19)';
+    } 
+</script>
+</body>
+</html>

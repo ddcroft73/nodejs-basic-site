@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="" />
+</head>
+<body>
+
+<div class="header-container">
+    <div class="header">
+        <span class="heading">Simple NodeJS Server</span></h1>
+    </div>
+</div>
+
+<div class="navbar" id="Topnav">
+    <a href="index.html" class="home"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>
+    <a href="code.html" class="code"><i class="fa fa-fw fa-code"></i>&nbsp;Code</a>
+    <a href="about.html" class="about"><i class="fa fa-fw fa-user"></i>&nbsp;About</a>
+    <a href="contact.html" class="active contact"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="openNav()"><i class="fa fa-bars"></i></a>
+
+    <div class="title">
+        <div class="title-box"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact - <span class="name">NodeJS Server</span></div>
+    </div>
+</div>
+
+<div class="sidenav" id="Sidenav" >
+    <div class="logo-sidenav-container">  <!-- flex container-->
+        <div class="logo-container">       <!-- flex item-->
+            <img src="/image/logo.png" width="150" height="50">
+        </div>
+        <div class="close">               <!-- flex item-->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    
+        </div>
+    </div>
+    <div class="hr"></div>
+    <div class="nav-container">
+        <a href="index.html" class="home"><i class="fa fa-fw fa-home"></i>&nbsp;Home</a>
+        <a href="code.html" class="code"><i class="fa fa-fw fa-code"></i>&nbsp;Code</a>
+        <a href="about.html" class="about"><i class="fa fa-fw fa-user"></i>&nbsp;About</a>
+        <a href="contact.html" class="contact"><i class="fa fa-fw fa-envelope"></i>&nbsp;Contact</a>
+    </div>
+</div>
+
+<div class="contact-main-flex-container"  >
+    <div clas="contact-main-content-container">
+        <div class="contact-main-content">
+            <div class="contact-content">
+
+                <div class="form-container">
+
+                    <form>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="fname">Name:</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="fname" name="firstname" placeholder="Your name">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="lname">Email:</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="email" name="email" placeholder="Email address">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="subject">Message:</label>
+                        </div>
+                        <div class="col-75">
+                          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <input type="submit" value="Submit">
+                      </div>
+                    </form>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    DCroft 2022 &copy
+    <!--
+    <div class="email-link">
+       <a href="mailto:gen.disarray@outlook.com"><svg viewBox="0 0 512 512" width="20" fill="#ffffff" title="envelope"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" /></svg></a>
+    </div>
+    -->
+</div>
+<script>
+  const sideNav = document.querySelector('.sidenav');
+
+  const openNav = () => {
+      document.getElementById("Sidenav").style.width = "250px";
+      sideNav.style.boxShadow = '0px 0px 5px 3px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(27, 28, 27, 0.19)';
+  }    
+  const closeNav = () => {
+  document.getElementById("Sidenav").style.width = "0";
+  sideNav.style.boxShadow = '0px 0px 0px 0px rgba(0, 0, 0, 0.4), 0 0px 0px 0 rgba(27, 28, 27, 0.19)';
+  } 
+</script>
+</body>
+</html>

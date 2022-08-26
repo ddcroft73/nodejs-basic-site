@@ -4,7 +4,7 @@
   <title>Basic Informational site</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="description" content="" />
 </head>
@@ -32,7 +32,7 @@
 <div class="sidenav" id="Sidenav" >
     <div class="logo-sidenav-container">  <!-- flex container-->
         <div class="logo-container">       <!-- flex item-->
-              <img src="image/logo.png" width="150" height="50">
+              <img src="/image/logo.png" width="150" height="50">
         </div>
         <div class="close">               <!-- flex item-->
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>    
@@ -84,7 +84,18 @@
     -->
 </div>
 
-<script src="nav.js"></script>
+<script>
+    const sideNav = document.querySelector('.sidenav');
+
+    const openNav = () => {
+        document.getElementById("Sidenav").style.width = "250px";
+        sideNav.style.boxShadow = '0px 0px 5px 3px rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(27, 28, 27, 0.19)';
+    }    
+    const closeNav = () => {
+    document.getElementById("Sidenav").style.width = "0";
+    sideNav.style.boxShadow = '0px 0px 0px 0px rgba(0, 0, 0, 0.4), 0 0px 0px 0 rgba(27, 28, 27, 0.19)';
+    } 
+</script>
 </body>
 </html>
 
